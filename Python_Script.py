@@ -1,4 +1,4 @@
-#!
+#! /Users/MauricioGS1/anaconda/bin/python
 
 from __future__ import division, absolute_import
 import sys
@@ -9,3 +9,5 @@ from numpy.random import *
 
 #Graph tool
 from graph_tool.all import *
+
+Alain
