@@ -1,4 +1,4 @@
-#! /Users/MauricioGS1/anaconda/bin/python
+#! /usr/local/bin/python
 
 from __future__ import division, absolute_import
 import sys
@@ -19,7 +19,7 @@ v_age = g.new_vertex_property("int")
 e_age = g.new_edge_property("int")
 
 # La cantidad de nodos de la red
-N = 100000
+N = 10
 
 # Generamos un vertice
 v = g.add_vertex()
@@ -97,8 +97,8 @@ raw_input("Presione ENTER para continuar..")
 g = load_graph("price.xml.gz")
 age = g.vertex_properties["age"]
 
-pos = sfdp_layout(g)
-graph_draw(g, pos, output_size=(1000, 1000), vertex_color=[1,1,1,0],
-           vertex_fill_color=age, vertex_size=1, edge_pen_width=1.2,
-           vcmap=matplotlib.cm.gist_heat_r, output="price.png")
+#pos = sfdp_layout(g)
+#graph_draw(g, pos, output_size=(1000, 1000), vertex_color=[1,1,1,0],
+#           vertex_fill_color=age, vertex_size=1, edge_pen_width=1.2,
+#           vcmap=matplotlib.cm.gist_heat_r, output="price.png")
 
